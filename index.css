@@ -4,6 +4,267 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin: 20px;
     line-height: 1.4;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.modern {
+    background-color: #eef2f6;
+    color: #475569;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+body.modern hr,
+body.modern .icon-32,
+body.modern .web-badges,
+body.modern .best-viewed {
+    display: none;
+}
+
+body.modern > div,
+body.modern > section,
+body.modern > footer {
+    width: 100%;
+    max-width: 1200px;
+}
+
+body.modern #projects-section, 
+body.modern #work-education {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+body.modern #head-section,
+body.modern #about-me,
+body.modern .projects,
+body.modern .technical-skills,
+body.modern .work-experience,
+body.modern .education,
+body.modern #contact-me,
+body.modern footer {
+    background-color: #ffffff; 
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+body.modern .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+body.modern .work-experience,
+body.modern .education {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+body.modern .projects h2,
+body.modern .work-experience h2,
+body.modern .education h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 5px;
+}
+
+body.modern .project-item,
+body.modern .work-item,
+body.modern .education-item {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.modern .project-item:hover,
+body.modern .work-item:hover,
+body.modern .education-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+body.modern .technical-skills h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #3b82f6; 
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body.modern .technical-skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+body.modern .technical-skills li {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #475569;
+}
+
+body.modern .technical-skills li::before {
+    display: none;
+}
+
+body.modern .technical-skills strong {
+    color: #1e293b;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.modern #head-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.modern .profile-pic {
+    border: none;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+body.modern #time-machine-btn {
+    background-color: #ffffff;
+    color: #3b82f6; 
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+body.modern #time-machine-btn:hover {
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+    color: #2563eb;
+}
+
+body.modern h1, 
+body.modern h2, 
+body.modern h3 {
+    color: #1e293b;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body.modern h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+body.modern .header-titles h3 {
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: #64748b;
+}
+
+body.modern h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #3b82f6; 
+    margin-bottom: 25px;
+}
+
+body.modern h3 {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+body.modern p {
+    font-weight: 400;
+    line-height: 1.7;
+    color: #475569;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+body.modern p:last-child {
+    margin-bottom: 0;
+}
+
+body.modern a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+body.modern a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body.modern ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+body.modern .project-item li,
+body.modern .work-item li,
+body.modern .education-item li {
+    font-weight: 400;
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+body.modern .project-item li:last-child,
+body.modern .work-item li:last-child,
+body.modern .education-item li:last-child {
+    margin-bottom: 0;
+}
+
+body.modern .project-item li::before,
+body.modern .work-item li::before,
+body.modern .education-item li::before {
+    content: "•";
+    color: #3b82f6;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 a {
@@ -210,5 +471,20 @@ footer {
     
     .header-profile {
         flex-direction: column;
+    }
+    body.modern #projects-section, 
+    body.modern #work-education {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    body.modern #head-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    body.modern .projects {
+        grid-template-columns: 1fr;
     }
 }
