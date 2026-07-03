@@ -1,0 +1,214 @@
+body {
+    background-color: #c0c0c0; 
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+    line-height: 1.4;
+}
+
+a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
+hr {
+    border: 0;
+    border-top: 2px inset #ffffff; 
+    margin: 20px 0;
+}
+
+h2 {
+    background-color: #78a3ff;
+    color: #000000;
+    border: 3px outset #ffffff; 
+    padding: 5px 10px;
+    margin-top: 0; 
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#head-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #78a3ff; 
+    border: 3px outset #ffffff; 
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.profile-pic {
+    width: 144px;
+    height: 144px;
+    border: 2px solid #0000EE; 
+    background-color: #000;
+    image-rendering: pixelated;
+}
+
+.header-titles h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.header-titles h3 {
+    margin: 5px 0 0 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+#time-machine-btn {
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 3px outset #ffffff;
+    padding: 10px 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#time-machine-btn:active {
+    border: 3px inset #ffffff;
+    background-color: #b0b0b0;
+}
+
+#projects-section, 
+#work-education {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.projects, 
+.technical-skills, 
+.work-experience, 
+.education {
+    flex: 1;
+    background-color: #c0c0c0;
+    border: 3px outset #ffffff;
+    padding: 15px;
+}
+
+.technical-skills {
+    background-color: #000000;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    border: 3px inset #888;
+}
+.technical-skills strong {
+    color: #ffffff;
+}
+
+.project-item, 
+.work-item, 
+.education-item {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #666; 
+    padding-bottom: 10px;
+}
+
+.project-item:last-child, 
+.work-item:last-child, 
+.education-item:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+ul {
+    margin-top: 5px;
+    padding-left: 25px;
+}
+
+.blink-text {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+a:hover {
+    cursor: crosshair;
+}
+
+.icon-32 {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 2px inset #ffffff; 
+    background-color: #000;
+    image-rendering: pixelated; 
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+}
+
+.web-badges {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px dashed #666; 
+}
+
+.web-badges a {
+    text-decoration: none;
+}
+
+.web-badges img {
+    margin: 0 5px;
+    border: 2px outset #ffffff;
+    transition: filter 0.1s;
+}
+
+.web-badges img:active {
+    border: 2px inset #ffffff; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid #666;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #333333;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    #projects-section, 
+    #work-education {
+        flex-direction: column;
+    }
+    #head-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .header-profile {
+        flex-direction: column;
+    }
+}

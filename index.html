@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bastián Valencia's Homepage</title>
+</head>
+<body>
+    <section id="head-section">
+        <div class="header-profile">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQG07NfPMJDXAw/profile-displayphoto-crop_800_800/B4DZ6O9Lk2IMAI-/0/1780514864688?e=1784764800&v=beta&t=OMDX0zOLHCBmOIDcut6o0hhqIfmme3UQVZuTudgnrAU" class="profile-pic">
+            <div class="header-titles">
+                <h1>Bastián Valencia Ull</h1>
+                <h3>B. Eng in Computer Science | Software Engineer | Cybersecurity Enthusiast</h3>
+            </div>
+        </div>
+        
+        <button id="time-machine-btn" title="Viajar a la versión moderna del sitio">
+            Travel to the future...
+        </button>
+    </section>
+    <hr>
+    <section id="about-me">
+        <p>
+            Hey! My name is Bastián Valencia Ull, a pregrad student in the
+            <a href="https://dcc.uchile.cl/">Department of Computer Science</a> at the
+            University of Chile. I also work part-time at <a href="https://www.tecnoback.com/">Tecnoback</a>
+            as a Software Developer.
+        </p>
+        <p>
+            I've got a profound interest in computers in general, but mainly in the Cybersecurity
+            and Software Engineering fields, having some explorations into Machine Learning aswell. 
+        </p>
+        <p>
+            I enjoy writing programs in low level languages such as Rust, C and C++. 
+            Besides that, I really like Object Oriented Programming, specifically in Scala.
+        </p>
+        <p>
+            I am fascinated by trying different tools, libraries and frameworks in the projects I work on,
+            with the objective of building safe, scalable and efficient software. 
+        </p>
+        <p>
+            I am also passionate about learning new things in a constantly evolving world.
+        </p>
+        <p>
+            Apart from this nerdy stuff, I love animals (dogs specially), music and movies. I love going to the theatre
+            and playing guitar (I play guitar in a local alternative rock band!!).
+        </p>
+    </section>
+
+    <section id="projects-section">
+        <div class="projects">
+            <h2><img src="./gifs/tumblr_n6tb246Mf11si7x18o1_500.gif" class="icon-32"> Projects</h2>
+
+            <div class="project-item">
+                <h3><a href="https://github.com/bsttiv/maestro" target="_blank">Maestro</a></h3>
+                <ul>
+                    <li>Zero-Trust JWT orchestrator microservice</li>
+                    <li>Features persistent token verification, automatic revocation, and periodic cryptographic key rotation</li>
+                    <li>Implements concurrent programming utilizing Redis</li>
+                    <li>Tools: Scala, PekkoHTTP, Tapir, Redis, Docker, JWT</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <h3><a href="https://github.com/Taptiive/machineid-rs" target="_blank">MachineID</a></h3>
+                <ul>
+                    <li>Library to obtain a computer's unique identification</li>
+                    <li>Completely modular and customizable</li>
+                    <li>Uses, among other things, the processor's core count, hard drive serial number, and MAC address</li>
+                    <li>Tools: Rust, Windows API, Linux Kernel</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://github.com/bsttiv/pscan" target="_blank">PScan</a></h3>
+                <ul>
+                    <li>Program to scan open ports on a server using the <a href="https://en.wikipedia.org/wiki/Port_scanner#SYN_scanning">SYN Scanning</a> strategy</li>
+                    <li>Supports range scans (e.g., ports 1 to 443) and Decoy, a spoofing option based on its <a href="https://nmap.org/">Nmap</a> namesake</li>
+                    <li>Written using the Producer-Consumer Pattern</li>
+                    <li>Tools: Rust, clap, pnet, Raw Sockets, OS Threads</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3><a href="https://github.com/bsttiv/tipos_espectrales" target="_blank">Spectral Type Classification</a></h3>
+                <ul>
+                    <li>Machine Learning project for the Interdisciplinary Module course (CD2201) at FCFM.</li>
+                    <li>Compares different multi-class classification tools (Random Forest, Gradient Boosting, KNN, and Neural Networks) using a highly imbalanced dataset (star catalog from the HIPPARCOS mission)</li>
+                    <li>Tools: Python, Tensorflow, scikit-learn, Numpy, Pandas.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="technical-skills">
+            <h2><img src="./gifs/minecraft-gear.gif" class="icon-32"> Technical Skills</h2>
+            <ul>
+                <li> 
+                    <strong>Languages:</strong>
+                    C, C++, Rust, Scala, Python, Go, Dart, Javascript/Typescript, SQL
+                </li>
+                <li>
+                    <strong>Technologies:</strong>
+                    Flutter, Flask, React, Vue, Tensorflow, scikit-learn, Git, MongoDB, Redis,
+                    UNIX, Pekko, Tapir, Axum, Tauri
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="work-education">
+        <div class="work-experience">
+            <h2><img src="./gifs/briefcase.gif" class="icon-32"> Work Experience</h2>
+            
+            <div class="work-item">
+                <h3>Software Engineer - Tecnoback</h3>
+                <p>January 2026 - Present | Lo Barnechea, Santiago</p>
+                <ul>
+                    <li>Programming of the Tecnoback mobile application</li>
+                    <li>State management implementation using Riverpod</li>
+                    <li>Creation of an API wrapper</li>
+                    <li>Publishing and management of the app on Google Play Console</li>
+                    <li>Deployment and development using CI/CD tools</li>
+                    <li>Firebase Cloud Messaging integration</li>
+                    <li>Programming of the TecPDF project</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <h3>Teaching Assistant & Grader - University of Chile</h3>
+                <p>March 2025 - Present | Santiago, Chile</p>
+                <ul>
+                    <li><strong>Introduction to Programming TA:</strong> Conducted lab sessions, provided hands-on assistance, and delivered detailed code feedback to students.</li>
+                    <li><strong>Math Grader:</strong> Administered and graded assessments for Calculus (Intro, Differential, Integral) and Algebra courses, efficiently handling regrade requests.</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <h3>Idemia IT Assistant - Entel Connect Center</h3>
+                <p>January 2025 - February 2025 | Ciudad Empresarial, Huechuraba</p>
+                <ul>
+                    <li>Computer assistant for Idemia's technical helpdesk</li>
+                    <li>Resolution of computer issues for the Civil Registry</li>
+                    <li>Management of peripherals and digital systems for civil servants</li>
+                    <li>User management: changing and resetting passwords</li>
+                    <li>Administration of operating system services for staff</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="education">
+            <h2><img src="./gifs/pngtree-pixel-art-graduation-cap-illustration-design-png-image_5687036.png" alt="🎓" class="icon-32"> Education</h2>
+            
+            <div class="education-item">
+                <h3>University of Chile</h3>
+                <p><strong>B. & P. Eng in Computer Science</strong> | March 2023 - Present | Santiago, Chile</p>
+                <p><strong>Acknowledgments:</strong>Outstanding Student in 2023, 2024 and 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <hr> <h2><img src="./gifs/giphy-preview.gif" class="icon-32"> Contact Me</h2>
+        <p>
+            You can reach me via email at:
+            <a href="mailto:bastian.valencia@ug.uchile.cl">bastian.valencia@ug.uchile.cl</a>
+        </p>
+        <div class="web-badges">
+            <a href="https://www.w3.org/MarkUp/html40/" target="_blank">
+                <img src="https://www.w3.org/Icons/valid-html40" alt="Valid HTML 4.0" width="88" height="31">
+            </a>
+            <a href="https://kernel.org/" target="_blank">
+                <img src="https://cyber.dabamos.de/88x31/linuxnow.gif" alt="Powered by Linux" width="88" height="31">
+            </a>
+            <a href="https://vim.org/" target="_blank">
+                <img src="https://cyber.dabamos.de/88x31/vim.gif" alt="Vim Editor" width="88" height="31">
+            </a>
+            <a href="#">
+                <img src="https://cyber.dabamos.de/88x31/netscape3.gif" alt="Netscape Now!" width="88" height="31">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p class="copyright">
+            &copy; 2026 Bastián Valencia Ull.<br>
+            All rights reserved.<br>
+        </p>
+    </footer>
+</body>
+</html>
